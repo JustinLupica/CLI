@@ -1,6 +1,5 @@
 require "CLI/version"
-
-module CLI
-  class Error < StandardError; end
-  # Your code goes here...
-end
+require_relative "./CLI/api.rb"
+require_relative "./CLI/controller.rb"
+require_relative "./CLI/recipes.rb"
+require_relative "./CLI/tags.rb"
