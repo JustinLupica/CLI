@@ -9,9 +9,9 @@ class Controller
                 API.tags_list_api   
                 Tags.display_all_tags 
             #Tags.display_all_tags
-            while input != 'exit' or input.to_i > 0
             puts "Enter the number of the category you would like:"
             input = gets.strip.downcase
+            while input != 'exit' or input.to_i > 0
             if input.to_i > 0
                 $tag_input = Tags.all_tags[input.to_i-1].tag_name
                 puts "Fetching recipes for #{Tags.all_tags[input.to_i-1].display_name}!"
